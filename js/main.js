@@ -6,4 +6,6 @@ jQuery(function($) {
     $('body').css('padding-top',navHeight)
     $('body').css('scroll-padding-top',navHeight)
     $('html').css('scroll-padding-top',navHeight)
+    $('#about-us').css('min-height',homeHeight)
+    $('#contact-us').css('min-height',homeHeight)
 });
