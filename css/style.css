@@ -222,6 +222,12 @@ p{
   margin-bottom: 5px;
 }
 
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 #footer .social-icons {
   margin-top: 15px;
 }
