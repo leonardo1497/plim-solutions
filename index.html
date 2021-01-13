@@ -16,8 +16,15 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
   </head>
-  <body id="bdy_main">
+  <body data-spy="scroll" data-offset="89" data-target=".navbar" id="bdy_main">
     <nav id="nav_main" class="navbar navbar-expand-md navbar-dark fixed-top">
       <a class="navbar-brand" href="#home"
         ><h1><img id="img_logo" src="assets/images/logo.png" alt="logo" /></h1
@@ -31,7 +38,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-grow-1" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+        <ul class="navbar-nav nav-pills ml-auto flex-nowrap">
           <li class="nav-item">
             <a class="nav-link" href="#home">Inicio</a>
           </li>
@@ -63,105 +70,71 @@
 
     <section id="services">
       <div class="container">
-        <div
-          class="heading wow fadeInUp"
-          data-wow-duration="1000ms"
-          data-wow-delay="300ms"
-        >
-          <div class="row justify-content-center">
-            <h2>Nuestros servicios</h2>
+        <div class="row justify-content-center">
+          <h2>Nuestros servicios</h2>
+        </div>
+      </div>
+      <div class="text-center our-services container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="service-icon">
+              <i class="fa fa-desktop"></i>
+            </div>
+            <div class="service-info">
+              <h3>Landing page para negocios y empresas</h3>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="service-icon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="service-info">
+              <h3>E-commerce a la medida de tú negocio</h3>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="service-icon">
+              <i class="fa fa-mobile-phone"></i>
+            </div>
+            <div class="service-info">
+              <h3>Aplicaciones móviles (Android/iOS)</h3>
+            </div>
           </div>
         </div>
-        <div class="text-center our-services">
-          <div class="row">
-            <div
-              class="col-sm-4 wow fadeInDown"
-              data-wow-duration="1000ms"
-              data-wow-delay="300ms"
-            >
-              <div class="service-icon">
-                <i class="fa fa-desktop"></i>
-              </div>
-              <div class="service-info">
-                <h3>Landing page para negocios y empresas</h3>
-              </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="service-icon">
+              <i class="fa fa-lightbulb-o"></i>
             </div>
-            <div
-              class="col-sm-4 wow fadeInDown"
-              data-wow-duration="1000ms"
-              data-wow-delay="450ms"
-            >
-              <div class="service-icon">
-                <i class="fa fa-shopping-cart"></i>
-              </div>
-              <div class="service-info">
-                <h3>E-commerce a la medida de tú negocio</h3>
-              </div>
-            </div>
-            <div
-              class="col-sm-4 wow fadeInDown"
-              data-wow-duration="1000ms"
-              data-wow-delay="550ms"
-            >
-              <div class="service-icon">
-                <i class="fa fa-mobile-phone"></i>
-              </div>
-              <div class="service-info">
-                <h3>Aplicaciones móviles (Android/iOS)</h3>
-              </div>
+            <div class="service-info">
+              <h3>Desarrollo de sistemas WEB a la medida</h3>
             </div>
           </div>
-          <div class="row">
-            <div
-              class="col-sm-4 wow fadeInUp"
-              data-wow-duration="1000ms"
-              data-wow-delay="650ms"
-            >
-              <div class="service-icon">
-                <i class="fa fa-lightbulb-o"></i>
-              </div>
-              <div class="service-info">
-                <h3>Desarrollo de sistemas WEB a la medida</h3>
-              </div>
+          <div class="col-sm-4">
+            <div class="service-icon">
+              <i class="fa fa-cubes"></i>
             </div>
-            <div
-              class="col-sm-4 wow fadeInUp"
-              data-wow-duration="1000ms"
-              data-wow-delay="750ms"
-            >
-              <div class="service-icon">
-                <i class="fa fa-cubes"></i>
-              </div>
-              <div class="service-info">
-                <h3>Sistemas de control de Inventario</h3>
-              </div>
-            </div>
-            <div
-              class="col-sm-4 wow fadeInUp"
-              data-wow-duration="1000ms"
-              data-wow-delay="850ms"
-            >
-              <div class="service-icon">
-                <i class="fa fa-users"></i>
-              </div>
-              <div class="service-info">
-                <h3>Sistemas de gestión de empleados.</h3>
-              </div>
+            <div class="service-info">
+              <h3>Sistemas de control de Inventario</h3>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-4"></div>
-            <div
-              class="col-sm-4 wow fadeInUp"
-              data-wow-duration="1000ms"
-              data-wow-delay="850ms"
-            >
-              <div class="service-icon">
-                <i class="fa fa-cogs"></i>
-              </div>
-              <div class="service-info">
-                <h3>Sistemas de gestión de procesos empresariales</h3>
-              </div>
+          <div class="col-sm-4">
+            <div class="service-icon">
+              <i class="fa fa-users"></i>
+            </div>
+            <div class="service-info">
+              <h3>Sistemas de gestión de empleados.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <div class="service-icon">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <div class="service-info">
+              <h3>Sistemas de gestión de procesos empresariales</h3>
             </div>
           </div>
         </div>
@@ -175,11 +148,7 @@
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <div
-              class="about-info wow fadeInUp"
-              data-wow-duration="1000ms"
-              data-wow-delay="300ms"
-            >
+            <div class="about-info">
               <h2 class="text-center">Misión</h2>
               <p>
                 Ser una empresa innovadora y con gran sentido de responsabilidad
@@ -191,11 +160,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div
-              class="about-info wow fadeInUp"
-              data-wow-duration="1000ms"
-              data-wow-delay="300ms"
-            >
+            <div class="about-info">
               <h2 class="text-center">Visión</h2>
               <p>
                 Ser la opción ideal para nuestros clientes basados en las
@@ -211,100 +176,82 @@
 
     <section id="contact-us" class="parallax">
       <div class="container">
-        <div class="row">
-          <div
-            class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp"
-            data-wow-duration="1000ms"
-            data-wow-delay="300ms"
-          >
-            <h2>Contáctanos</h2>
-          </div>
+        <div class="row justify-content-center">
+          <h2>Contáctanos</h2>
         </div>
-        <div
-          class="contact-form wow fadeIn"
-          data-wow-duration="1000ms"
-          data-wow-delay="600ms"
-        >
-          <div class="row">
-            <div class="col-sm-6">
-              <form
-                id="main-contact-form"
-                name="contact-form"
-                method="POST"
-                action="javascript:void(0)"
-              >
-                <div
-                  class="row wow fadeInUp"
-                  data-wow-duration="1000ms"
-                  data-wow-delay="300ms"
-                >
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        class="form-control"
-                        placeholder="Nombre"
-                        required="required"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        class="form-control"
-                        placeholder="Correo electrónico"
-                        required="required"
-                      />
-                    </div>
+      </div>
+      <div class="contact-form container">
+        <div class="row">
+          <div class="col-sm-6">
+            <form
+              id="main-contact-form"
+              name="contact-form"
+              method="POST"
+              action="javascript:void(0)"
+            >
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Nombre"
+                      required="required"
+                    />
                   </div>
                 </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                    placeholder="Asunto"
-                    required="required"
-                  />
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Correo electrónico"
+                      required="required"
+                    />
+                  </div>
                 </div>
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    class="form-control"
-                    rows="4"
-                    placeholder="Mensaje"
-                    required="required"
-                  ></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="submit" class="btn-submit">Enviar</button>
-                </div>
-              </form>
-            </div>
-            <div class="col-sm-6">
-              <div
-                class="contact-info wow fadeInUp"
-                data-wow-duration="1000ms"
-                data-wow-delay="300ms"
-              >
-                <ul class="address">
-                  <li>
-                    <i class="fa fa-phone"></i> <span> Teléfonos:</span> 922 207
-                    4535 | 916 100 8840
-                  </li>
-                  <li>
-                    <i class="fa fa-envelope"></i>
-                    <span> Correo electrónico:</span
-                    ><a href="mailto:info@plim-solutions.com">
-                      info@plim-solutions.com</a
-                    >
-                  </li>
-                </ul>
               </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Asunto"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Mensaje"
+                  required="required"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn-submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <div class="contact-info">
+              <ul class="address">
+                <li>
+                  <i class="fa fa-phone"></i> <span> Teléfonos:</span> 922 207
+                  4535 | 916 100 8840
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span> Correo electrónico:</span
+                  ><a href="mailto:info@plim-solutions.com">
+                    info@plim-solutions.com</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -312,16 +259,31 @@
     </section>
 
     <footer id="footer">
-      <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="footer-top">
         <div class="container text-center">
           <div class="footer-logo">
-            <a href="index.html"><img class="img-responsive" src="assets/images/logo.png" alt=""></a>
+            <a href="index.html"
+              ><img class="img-responsive" src="assets/images/logo.png" alt=""
+            /></a>
           </div>
           <div class="social-icons">
             <ul>
-              <li><a class="envelope" href="mailto:info@plim-solutions.com"><i class="fa fa-envelope"></i></a></li>
-              <li><a class="facebook" href="https://www.facebook.com/PlimSolutions/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li>
+                <a class="envelope" href="mailto:info@plim-solutions.com"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="facebook"
+                  href="https://www.facebook.com/PlimSolutions/"
+                  target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -333,7 +295,7 @@
               <p>&copy; 2021 Plim Solutions.</p>
             </div>
             <div class="col-sm-6">
-              <!--p class="pull-right">Crafted by <a href="http://designscrazed.org/">Allie</a></p-->
+              <!--p class="pull-right">Realizado por Leonardo López</p-->
             </div>
           </div>
         </div>

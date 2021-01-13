@@ -21,6 +21,7 @@
   
 nav{
   background-color: #420d79;
+  padding: 8px 16px 8px 16px !important;
 }
 
 .navbar-dark .navbar-toggler {
@@ -173,15 +174,14 @@ p{
 }
 
 /********* CONTACT***********/
+#contact-us input,textarea,a{
+  color: #fff !important;
+}
 #contact-us {
   padding-top: 45px;
   padding-bottom: 0;
   background-image:url(../assets/images/contact-bg.jpg);
   padding-bottom: 90px; 
-}
-
-#contact-us .heading {
-  padding-top: 95px;
 }
 
 .btn-submit {
@@ -230,6 +230,7 @@ p{
   list-style: none;
   padding: 0;
   margin: 0;
+  display: inline-block;
 }
 
 #footer .social-icons ul li a {
@@ -260,4 +261,29 @@ p{
 }
 #footer .social-icons ul li a.tumblr:hover {
   background-color: #ff6b00;
+}
+
+.social-icons ul li {
+  float: left;
+  margin-right: 8px;
+}
+
+@media (max-width: 767px){
+  .social-icons ul li a {
+      font-size: 14px;
+      height: 30px;
+      line-height: 30px;
+      width: 30px;
+  }
+}
+
+.social-icons ul li a {
+  color: #fff;
+  background-color: #d9d9d9;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  display: block;
+  font-size: 16px;
+  opacity: 0.8;
 }
