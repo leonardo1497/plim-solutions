@@ -35,7 +35,7 @@ nav{
 }
 
 #home{
-  background-image: url('../assets/images/1.png');
+  background-image: url('../assets/images/1.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +141,7 @@ p{
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../assets/images/nosotros.png);
+  background-image: url(../assets/images/nosotros.webp);
   padding: 10% 0;
 }
 
